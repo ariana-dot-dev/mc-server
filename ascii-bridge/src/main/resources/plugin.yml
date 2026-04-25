@@ -1,0 +1,17 @@
+name: AsciiBridge
+version: '${version}'
+main: dev.ascii.bridge.AsciiBridgePlugin
+api-version: '1.21'
+description: Two-way chat bridge between Minecraft players and an external AI agent.
+commands:
+  ascii:
+    description: Send a message to the Ascii AI agent
+    usage: /ascii <message>
+  ascii-say:
+    description: Broadcast a message from Ascii to all players
+    usage: /ascii-say <message>
+    permission: ascibridge.say
+permissions:
+  ascibridge.say:
+    description: Allows use of /ascii-say
+    default: op
