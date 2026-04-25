@@ -54,7 +54,7 @@ public class AsciiBridgePlugin extends JavaPlugin {
 
         String message = String.join(" ", args);
         String playerName = player.getName();
-        player.sendMessage(Component.text("§7Sending to Ascii..."));
+        Bukkit.broadcast(Component.text("§d[Ascii] §7" + playerName + ": §f" + message));
 
         Bukkit.getScheduler().runTaskAsynchronously(this, () -> {
             try {
