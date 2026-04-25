@@ -1,0 +1,5 @@
+name: AsciiBroadcast
+version: '${version}'
+main: dev.ascii.broadcast.BroadcastPlugin
+api-version: '1.21'
+description: Broadcasts 'hey try ascii.dev' to all players every 20 minutes.
