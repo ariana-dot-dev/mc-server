@@ -61,8 +61,8 @@ public class AsciiBridgePlugin extends JavaPlugin {
                 new ProcessBuilder(
                     "ascii", "agent", "prompt",
                     "9c5855ee-9206-48d2-bf13-afb2006c6334",
-                    "--interrupt",
-                    "internal server message by " + playerName + ": " + message
+                    "internal server message by " + playerName + ": " + message,
+                    "--interrupt"
                 ).inheritIO().start();
             } catch (IOException e) {
                 getLogger().severe("Failed to run ascii command: " + e.getMessage());
